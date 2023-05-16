@@ -1,0 +1,179 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    max-width: 1280px;
+    margin: 0 auto;
+    background-color: #5e5b5bad;
+    color: #333333;
+}
+
+body.modo-escuro {
+
+    background-color: #212121;
+    color: #f5f5f5;
+}
+
+header {
+    /* background-color: green; -
+    mudar depois*/
+    display: flex;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+header .logo,
+header .imagem-botao {
+    width: 30px;
+    transition: 0.2s ease-in-out;
+}
+
+header #botao-alterar-tema {
+    background: none;
+    border: none;
+
+}
+
+header .logo:hover,
+header .imagem-botao:hover,
+main .cartao-pokemon:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+main {
+    padding: 25px;
+}
+
+main .Listagem-Pokemon {
+    display: flex;
+    /*centraliza lado a lado*/
+    flex-wrap: wrap;
+    /*deixa um em baixo do outro
+    - cards em linhas */
+    gap: 25px;
+    /*espaço entre cards*/
+    /* justify-content: center; */
+}
+
+main .cartao-pokemon {
+    background-color: #d8e3ec;
+    width: 200px;
+    padding: 15px;
+    /*espaçamento*/
+    display: flex;
+    /*centralizar*/
+    flex-direction: column;
+    /*justa o texto*/
+    align-items: center;
+    gap: 15px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+
+}
+
+main .cartao-pokemon:hover {
+    background-color: #96d9d6;
+    /*troca cor ao
+        passar o mouse*/
+}
+
+
+.modo-escuro .cartao-pokemon {
+    background-color: #d8d6d6e1;
+}
+
+main .cartao-pokemon .informacoes {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid#030303;
+    border-radius: 10px;
+}
+
+main .cartao-pokemon .informacoes span {
+    padding: 5px;
+    /*espaçamento*/
+    text-transform: uppercase;
+    /*letra 
+        maiuscula*/
+    font-size: 17px;
+}
+
+main .cartao-pokemon .gif {
+    width: 90px;
+    height: 90px;
+}
+
+main .cartao-pokemon .tipos {
+    display: flex;
+    gap: 5px;
+
+}
+
+main .cartao-pokemon .tipo {
+    padding: 8px;
+    border-radius: 20px;
+    display: flex;
+
+}
+
+.grama {
+    background-color: #7ac74c;
+
+
+}
+
+.Veneno {
+    background-color: #df67ddfb;
+
+}
+
+.fogo {
+    background-color: #ee8130;
+
+}
+
+.agua {
+    background-color: #6390f0;
+
+}
+
+.inseto {
+    background-color: #a6b91a;
+
+}
+
+main .descricao {
+    max-height: 80px;
+    overflow-y: scroll;
+    font-size: 14px;
+    padding-right: 10px;
+}
+
+/* Para colocar uma imagem como background (ou fundo) em uma página HTML,
+você pode usar a propriedade CSS "background-image".
+
+Para fazer isso, siga os seguintes passos:
+
+Escolha a imagem que você deseja usar como background e coloque-a na mesma pasta do arquivo HTML.
+
+Abra o arquivo CSS (ou crie um se você ainda não tiver um) e adicione o seguinte código:
+
+css
+Copy code
+body {
+  background-image: url('nome-da-imagem.jpg');
+}
+Substitua "nome-da-imagem.jpg" pelo nome do arquivo da imagem que você quer usar.
+
+Salve o arquivo CSS.
+
+Abra o arquivo HTML e inclua a folha de estilo CSS que você acabou de criar no cabeçalho do documento:
+
+bash
+Copy code
+<head>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+Salve o arquivo HTML.
+Agora, a imagem que você escolheu deve aparecer como background da página HTML.
+
+Você pode ajustar a posição e o tamanho da imagem com outras propriedades CSS, como "background-size", "background-position" e "background-repeat". */
